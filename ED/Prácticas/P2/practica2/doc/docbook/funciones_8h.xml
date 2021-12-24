@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="funciones_8h">
+    <title>funciones.h File Reference</title>
+    <programlisting>#include &quot;imagen.h&quot;</programlisting>
+    <programlisting>#include &quot;imagenES.h&quot;</programlisting>
+    <programlisting>#include &lt;iostream&gt;</programlisting>
+<para>Include dependency diagram for funciones.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="funciones_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for funciones.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="funciones_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>defines</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="funciones_8h_1a4ccd6deb3870b80f06e0c1798c932d3d">FUNCIONES</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Funciones</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="funciones_8h_1ad2d321a0979cbc0df8552d934d92bf39">UmbralizarEsc</link> (
+const char * fichE, const char * fichS, int t1, int t2)<para><emphasis>Umbraliza una imagen (pixeles fuera de un rango de valores = 255)</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="funciones_8h_1aa542d46da362389bf2c8d3ebd26b40cf">Zoom</link> (
+const char * fichE, const char * fichS, int x1, int y1, int x2, int y2)<para><emphasis>Aumenta una seccion de la imagen (zoom)</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="funciones_8h_1a56ae066a22a81096edbd19f78727b6c6">Contraste</link> (
+const char * fichE, const char * fichS, int min, int max)<para><emphasis>Aumenta el contraste de una imagen segun un nuevo rango valores (min &amp;&amp; max)</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="funciones_8h_1ac28b10a7053cb48f72e17f22aab8f97b">Morphing</link> (
+const char * fichE1, const char * fichE2, int pasos)<para><emphasis>Crea una transicion de imagenes mediante la creacion de ficheros (imagenes) intermedios.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Descripción detallada</title>
+
+<para>Fichero de cabecera para las funciones que modifican imagenes. </para>
+    <para>Definition in file /home/julian/Escritorio/2_DGIIM/ED/P_2/proyecto_imagen/inc/funciones.h</para>
+    </simplesect>
+</section>

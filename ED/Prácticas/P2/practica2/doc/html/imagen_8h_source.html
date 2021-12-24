@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TDA IMAGEN: Fichero Fuente inc/imagen.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">TDA IMAGEN
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">imagen.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="imagen_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef IMAGEN</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define IMAGEN</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="imagen_8h.html#a0c8186d9b9b7880309c27230bbb5e69d">   10</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="imagen_8h.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a>; <span class="comment">// tipo base de cada pixel</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classImagen.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="classImagen.html">Imagen</a>{</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">private</span>:</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classImagen.html#a7f15719f14cd934dfcbd68c287bbbe8b">   30</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classImagen.html#a7f15719f14cd934dfcbd68c287bbbe8b">filas</a>;      <span class="comment">// Numero de filas de la imagen</span></div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classImagen.html#a0a457e0727a540c60dcdf02410e25be9">   31</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classImagen.html#a0a457e0727a540c60dcdf02410e25be9">cols</a>;       <span class="comment">// Numero de columnas de la imagen</span></div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classImagen.html#a2a1c6ab009c2358bbdf7134c9e7f52d6">   32</a></span>&#160;        <a class="code" href="imagen_8h.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a> **<a class="code" href="classImagen.html#a2a1c6ab009c2358bbdf7134c9e7f52d6">img</a>;     <span class="comment">// La imagen en si: una matriz dinamica 2D de bytes</span></div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"></span>        <span class="keywordtype">void</span> <a class="code" href="classImagen.html#a0d06b8762c40ab6b6d1da6d45c2024da">allocate</a> (<span class="keywordtype">int</span> f, <span class="keywordtype">int</span> c);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classImagen.html#a50bdabe1d37bc418b2076e70a5a8402c">deallocate</a> ();</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classImagen.html#af9c0798c6c770482eca1cb67e7e1ce9c">copy</a> (<span class="keyword">const</span> <a class="code" href="classImagen.html">Imagen</a> &amp;orig);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="classImagen.html#ab2e649aa7a105155c7bfdb846abf0528">Imagen</a> ();</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="classImagen.html#ab2e649aa7a105155c7bfdb846abf0528">Imagen</a> (<span class="keywordtype">int</span> f,<span class="keywordtype">int</span> c);</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <a class="code" href="classImagen.html#ab2e649aa7a105155c7bfdb846abf0528">Imagen</a> (<span class="keyword">const</span> <a class="code" href="classImagen.html">Imagen</a> &amp;orig);</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <a class="code" href="classImagen.html#ab2e649aa7a105155c7bfdb846abf0528">Imagen</a> (<span class="keywordtype">int</span> f, <span class="keywordtype">int</span> c, <span class="keyword">const</span> <a class="code" href="imagen_8h.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a> *vector);</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <a class="code" href="classImagen.html#a03dd93c9cf920a9dc0b72f8bd34f2e8a">~Imagen</a> ();</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <a class="code" href="classImagen.html">Imagen</a> &amp; <a class="code" href="classImagen.html#a9cfdf5f496d78247026783b4026458e8">operator = </a>(<span class="keyword">const</span> <a class="code" href="classImagen.html">Imagen</a> &amp;orig); </div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classImagen.html#a9cfbba6e40009767ec56197631f63d7e">get_filas</a> () <span class="keyword">const</span>;</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classImagen.html#a4150d2b82ea80b969ddb8385b83e5485">get_columnas</a> () <span class="keyword">const</span>;</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classImagen.html#a5b8399ee72d0f855aa9fd1b3bfd0c4cc">set_pixel</a> (<span class="keywordtype">int</span> f, <span class="keywordtype">int</span> c, <a class="code" href="imagen_8h.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a> valor);</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <a class="code" href="imagen_8h.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a> <a class="code" href="classImagen.html#a12eeea1f5b70fe0cac4a01be5878d97d">get_pixel</a> (<span class="keywordtype">int</span> f, <span class="keywordtype">int</span> c) <span class="keyword">const</span>;</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <a class="code" href="imagen_8h.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a> * <a class="code" href="classImagen.html#a0ea022d024c815917e6fa8485583672f">flat</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;};</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classImagen_html_a12eeea1f5b70fe0cac4a01be5878d97d"><div class="ttname"><a href="classImagen.html#a12eeea1f5b70fe0cac4a01be5878d97d">Imagen::get_pixel</a></div><div class="ttdeci">byte get_pixel(int f, int c) const</div><div class="ttdoc">Consulta el valor de un pixel de la imagen. </div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00092">imagen.cpp:92</a></div></div>
+<div class="ttc" id="classImagen_html_a0d06b8762c40ab6b6d1da6d45c2024da"><div class="ttname"><a href="classImagen.html#a0d06b8762c40ab6b6d1da6d45c2024da">Imagen::allocate</a></div><div class="ttdeci">void allocate(int f, int c)</div><div class="ttdoc">Reserva fxc posiciones en memoria. </div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00011">imagen.cpp:11</a></div></div>
+<div class="ttc" id="classImagen_html_ab2e649aa7a105155c7bfdb846abf0528"><div class="ttname"><a href="classImagen.html#ab2e649aa7a105155c7bfdb846abf0528">Imagen::Imagen</a></div><div class="ttdeci">Imagen()</div><div class="ttdoc">Constructor por defecto de la clase imagen. </div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00050">imagen.cpp:50</a></div></div>
+<div class="ttc" id="classImagen_html_a2a1c6ab009c2358bbdf7134c9e7f52d6"><div class="ttname"><a href="classImagen.html#a2a1c6ab009c2358bbdf7134c9e7f52d6">Imagen::img</a></div><div class="ttdeci">byte ** img</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8h_source.html#l00032">imagen.h:32</a></div></div>
+<div class="ttc" id="classImagen_html"><div class="ttname"><a href="classImagen.html">Imagen</a></div><div class="ttdoc">T.D.A. Imagen. </div><div class="ttdef"><b>Definition:</b> <a href="imagen_8h_source.html#l00026">imagen.h:26</a></div></div>
+<div class="ttc" id="classImagen_html_a7f15719f14cd934dfcbd68c287bbbe8b"><div class="ttname"><a href="classImagen.html#a7f15719f14cd934dfcbd68c287bbbe8b">Imagen::filas</a></div><div class="ttdeci">int filas</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8h_source.html#l00030">imagen.h:30</a></div></div>
+<div class="ttc" id="classImagen_html_a9cfbba6e40009767ec56197631f63d7e"><div class="ttname"><a href="classImagen.html#a9cfbba6e40009767ec56197631f63d7e">Imagen::get_filas</a></div><div class="ttdeci">int get_filas() const</div><div class="ttdoc">Consulta numero de filas de la imagen. </div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00082">imagen.cpp:82</a></div></div>
+<div class="ttc" id="classImagen_html_a0a457e0727a540c60dcdf02410e25be9"><div class="ttname"><a href="classImagen.html#a0a457e0727a540c60dcdf02410e25be9">Imagen::cols</a></div><div class="ttdeci">int cols</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8h_source.html#l00031">imagen.h:31</a></div></div>
+<div class="ttc" id="classImagen_html_a9cfdf5f496d78247026783b4026458e8"><div class="ttname"><a href="classImagen.html#a9cfdf5f496d78247026783b4026458e8">Imagen::operator=</a></div><div class="ttdeci">Imagen &amp; operator=(const Imagen &amp;orig)</div><div class="ttdoc">Operador de asignación de la clase. </div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00077">imagen.cpp:77</a></div></div>
+<div class="ttc" id="classImagen_html_af9c0798c6c770482eca1cb67e7e1ce9c"><div class="ttname"><a href="classImagen.html#af9c0798c6c770482eca1cb67e7e1ce9c">Imagen::copy</a></div><div class="ttdeci">void copy(const Imagen &amp;orig)</div><div class="ttdoc">Copia los datos miembro de orig. </div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00037">imagen.cpp:37</a></div></div>
+<div class="ttc" id="classImagen_html_a0ea022d024c815917e6fa8485583672f"><div class="ttname"><a href="classImagen.html#a0ea022d024c815917e6fa8485583672f">Imagen::flat</a></div><div class="ttdeci">byte * flat() const</div><div class="ttdoc">Genera un vector con los valores de los pixeles de la imagen. </div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00096">imagen.cpp:96</a></div></div>
+<div class="ttc" id="classImagen_html_a4150d2b82ea80b969ddb8385b83e5485"><div class="ttname"><a href="classImagen.html#a4150d2b82ea80b969ddb8385b83e5485">Imagen::get_columnas</a></div><div class="ttdeci">int get_columnas() const</div><div class="ttdoc">Consulta número de columnas de la imagen. </div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00085">imagen.cpp:85</a></div></div>
+<div class="ttc" id="imagen_8h_html_a0c8186d9b9b7880309c27230bbb5e69d"><div class="ttname"><a href="imagen_8h.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a></div><div class="ttdeci">unsigned char byte</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8h_source.html#l00010">imagen.h:10</a></div></div>
+<div class="ttc" id="classImagen_html_a5b8399ee72d0f855aa9fd1b3bfd0c4cc"><div class="ttname"><a href="classImagen.html#a5b8399ee72d0f855aa9fd1b3bfd0c4cc">Imagen::set_pixel</a></div><div class="ttdeci">void set_pixel(int f, int c, byte valor)</div><div class="ttdoc">Modifica el valor de un pixel de la imagen. </div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00088">imagen.cpp:88</a></div></div>
+<div class="ttc" id="classImagen_html_a03dd93c9cf920a9dc0b72f8bd34f2e8a"><div class="ttname"><a href="classImagen.html#a03dd93c9cf920a9dc0b72f8bd34f2e8a">Imagen::~Imagen</a></div><div class="ttdeci">~Imagen()</div><div class="ttdoc">Destructor de la clase. </div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00074">imagen.cpp:74</a></div></div>
+<div class="ttc" id="classImagen_html_a50bdabe1d37bc418b2076e70a5a8402c"><div class="ttname"><a href="classImagen.html#a50bdabe1d37bc418b2076e70a5a8402c">Imagen::deallocate</a></div><div class="ttdeci">void deallocate()</div><div class="ttdoc">Libera la memoria ocupada. </div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00026">imagen.cpp:26</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

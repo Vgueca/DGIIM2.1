@@ -1,0 +1,9 @@
+Ejercicio 5 doble grado Noah Ramos González
+
+		        56
+		       	/ \
+		       37 58
+		       /  /\
+		      33 57 72
+		      /  /   \
+		     30 38   80

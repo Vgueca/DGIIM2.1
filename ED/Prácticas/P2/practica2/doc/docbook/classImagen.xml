@@ -1,0 +1,558 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classImagen">
+<title>Imagen class Reference</title>
+<para>
+    <programlisting>#include <link linkend="imagen_8h">&lt;imagen.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for Imagen</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classImagen__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for Imagen</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classImagen__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Atributos privados</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int filas</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int cols</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>byte ** img</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classImagen_1a0d06b8762c40ab6b6d1da6d45c2024da">allocate</link> (
+int f, int c)<para><emphasis>Reserva fxc posiciones en memoria.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classImagen_1a50bdabe1d37bc418b2076e70a5a8402c">deallocate</link> (
+)<para><emphasis>Libera la memoria ocupada.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classImagen_1af9c0798c6c770482eca1cb67e7e1ce9c">copy</link> (
+const <link linkend="classImagen">Imagen</link> &amp; orig)<para><emphasis>Copia los datos miembro de orig.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classImagen_1ab2e649aa7a105155c7bfdb846abf0528">Imagen</link> (
+)<para><emphasis>Constructor por defecto de la clase imagen.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classImagen_1a4b397c4a3dc0794cab351f96dc9390fd">Imagen</link> (
+int f, int c)<para><emphasis>Constructor por parametros de la clase.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classImagen_1a987062737ac7faacc522370dbae3b224">Imagen</link> (
+const <link linkend="classImagen">Imagen</link> &amp; orig)<para><emphasis>Constructor de copia de la clase.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classImagen_1a33a2993487ba11088d66acc31bb02ce3">Imagen</link> (
+int f, int c, const <link linkend="imagen_8h_1a0c8186d9b9b7880309c27230bbb5e69d">byte</link> * vector)<para><emphasis>Constructor por parametros (vector) de la clase.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classImagen_1a03dd93c9cf920a9dc0b72f8bd34f2e8a">~Imagen</link> (
+)<para><emphasis>Destructor de la clase.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classImagen">Imagen</link> &amp; <link linkend="classImagen_1a9cfdf5f496d78247026783b4026458e8">operator=</link> (
+const <link linkend="classImagen">Imagen</link> &amp; orig)<para><emphasis>Operador de asignación de la clase.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="classImagen_1a9cfbba6e40009767ec56197631f63d7e">get_filas</link> (
+)<para><emphasis>Consulta numero de filas de la imagen.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="classImagen_1a4150d2b82ea80b969ddb8385b83e5485">get_columnas</link> (
+)<para><emphasis>Consulta número de columnas de la imagen.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classImagen_1a5b8399ee72d0f855aa9fd1b3bfd0c4cc">set_pixel</link> (
+int f, int c, <link linkend="imagen_8h_1a0c8186d9b9b7880309c27230bbb5e69d">byte</link> valor)<para><emphasis>Modifica el valor de un pixel de la imagen.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="imagen_8h_1a0c8186d9b9b7880309c27230bbb5e69d">byte</link> <link linkend="classImagen_1a12eeea1f5b70fe0cac4a01be5878d97d">get_pixel</link> (
+int f, int c)<para><emphasis>Consulta el valor de un pixel de la imagen.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="imagen_8h_1a0c8186d9b9b7880309c27230bbb5e69d">byte</link> * <link linkend="classImagen_1a0ea022d024c815917e6fa8485583672f">flat</link> (
+)<para><emphasis>Genera un vector con los valores de los pixeles de la imagen.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>T.D.A. <link linkend="classImagen">Imagen</link>. </para>
+    </simplesect>
+        <simplesect>
+            <title>Descripción detallada</title>
+
+<para>Una instancia <emphasis>i</emphasis> del tipo de datos abstracto <computeroutput><link linkend="classImagen">Imagen</link></computeroutput> es un objeto que presenta una disposicion matricial formado por un conjunto de pixeles, que toman valores en el intervalo [0, 255]. Lo representamos mediante: &#8211; un numero de filas &#8211; un numero de columnas &#8211; una matriz de pixeles (bytes);</para>
+
+<para><formalpara><title>Autores: </title>
+
+<para>Julián Garrido Arana y Juan Valentín Guerrero Cano </para>
+</formalpara>
+<formalpara><title>Fecha: </title>
+
+<para>Noviembre del 2020 </para>
+</formalpara>
+</para>
+                <para>Definition at line 26 of file imagen.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>imagen.h</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Documentación de los datos miembro</title>
+        </section>
+            <section xml:id="classImagen_1a0d06b8762c40ab6b6d1da6d45c2024da">
+                <title>void Imagen::allocate (int f, int c)</title> <emphasis>Reserva fxc posiciones en memoria.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parámetros                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>f</entry>
+                                <entry>
+<para>numero de filas </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>c</entry>
+                                <entry>
+<para>numero de columnas </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Precondición: </title>
+
+<para>filas (f) &gt;= 0 y cols (c) &gt;= 0 </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classImagen_1a50bdabe1d37bc418b2076e70a5a8402c">
+                <title>void Imagen::deallocate ()</title> <emphasis>Libera la memoria ocupada.</emphasis>
+                
+            </section>
+            <section xml:id="classImagen_1af9c0798c6c770482eca1cb67e7e1ce9c">
+                <title>void Imagen::copy (const Imagen &amp;orig)</title> <emphasis>Copia los datos miembro de orig.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parámetros                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>orig</entry>
+                                <entry>
+<para><link linkend="classImagen">Imagen</link> a ser copiada (ref. const) </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classImagen_1ab2e649aa7a105155c7bfdb846abf0528">
+                <title>Imagen::Imagen ()</title> <emphasis>Constructor por defecto de la clase imagen.</emphasis>
+                
+<para><formalpara><title>Postcondición: </title>
+
+<para>Genera una imagen nula (filas = 0; cols = 0; img = nullptr) </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classImagen_1a4b397c4a3dc0794cab351f96dc9390fd">
+                <title>Imagen::Imagen (int f, int c)</title> <emphasis>Constructor por parametros de la clase.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parámetros                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>f</entry>
+                                <entry>
+<para>numero de filas </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>c</entry>
+                                <entry>
+<para>numero de columnas </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Precondición: </title>
+
+<para>filas (f) &gt;= 0 y cols (c) &gt;= 0 </para>
+</formalpara>
+<formalpara><title>Postcondición: </title>
+
+<para>Crea unaa imagen de fxc pixeles </para>
+<simplesect/>
+<para>La imagen creada contiene valores &quot;basura&quot; (no está inicializada). </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classImagen_1a987062737ac7faacc522370dbae3b224">
+                <title>Imagen::Imagen (const Imagen &amp;orig)</title> <emphasis>Constructor de copia de la clase.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parámetros                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>orig</entry>
+                                <entry>
+<para><link linkend="classImagen">Imagen</link> a ser copiada (ref. constante) </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Postcondición: </title>
+
+<para>Crea una imagen identica a orig </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classImagen_1a33a2993487ba11088d66acc31bb02ce3">
+                <title>Imagen::Imagen (int f, int c, const byte *vector)</title> <emphasis>Constructor por parametros (vector) de la clase.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parámetros                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>f</entry>
+                                <entry>
+<para>numero de filas </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>c</entry>
+                                <entry>
+<para>numero de columnas </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>vector</entry>
+                                <entry>
+<para>vector que contiene los valores de los pixeles linealmente </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Precondición: </title>
+
+<para>filas (f) &gt;= 0 y cols (c) &gt;= 0 </para>
+</formalpara>
+<formalpara><title>Postcondición: </title>
+
+<para>Crea unaa imagen de fxc pixeles </para>
+<simplesect/>
+<para>Cada pixel contiene el valor correspondiente a una posición del vector. </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classImagen_1a03dd93c9cf920a9dc0b72f8bd34f2e8a">
+                <title>Imagen::~Imagen ()</title> <emphasis>Destructor de la clase.</emphasis>
+                
+<para><formalpara><title>Postcondición: </title>
+
+<para>Libera la memoria de la imagen </para>
+</formalpara>
+<formalpara><title>Devuelve: </title>
+
+<para>Nada </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classImagen_1a9cfdf5f496d78247026783b4026458e8">
+                <title>Imagen &amp; Imagen::operator= (const Imagen &amp;orig)</title> <emphasis>Operador de asignación de la clase.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parámetros                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>orig</entry>
+                                <entry>
+<para><link linkend="classImagen">Imagen</link> a asignar (ref. constante) </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Precondición: </title>
+
+<para>this distinto de &amp;orig </para>
+</formalpara>
+<formalpara><title>Devuelve: </title>
+
+<para>Objeto <link linkend="classImagen">Imagen</link> (ref. parte izq. de la asignacion) </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classImagen_1a9cfbba6e40009767ec56197631f63d7e">
+                <title>int Imagen::get_filas () const</title> <emphasis>Consulta numero de filas de la imagen.</emphasis>
+                
+<para><formalpara><title>Devuelve: </title>
+
+<para>Devuelve el numero de filas </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classImagen_1a4150d2b82ea80b969ddb8385b83e5485">
+                <title>int Imagen::get_columnas () const</title> <emphasis>Consulta número de columnas de la imagen.</emphasis>
+                
+<para><formalpara><title>Devuelve: </title>
+
+<para>Devuelve el numero de columnas </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classImagen_1a5b8399ee72d0f855aa9fd1b3bfd0c4cc">
+                <title>void Imagen::set_pixel (int f, int c, byte valor)</title> <emphasis>Modifica el valor de un pixel de la imagen.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parámetros                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>f</entry>
+                                <entry>
+<para>indice de la fila </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>c</entry>
+                                <entry>
+<para>indice de la columna </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>valor</entry>
+                                <entry>
+<para>tono a establecer </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Precondición: </title>
+
+<para>f &gt;= 0 &amp;&amp; c &gt;= 0 &amp;&amp; valor entre [0, 255] </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classImagen_1a12eeea1f5b70fe0cac4a01be5878d97d">
+                <title>byte Imagen::get_pixel (int f, int c) const</title> <emphasis>Consulta el valor de un pixel de la imagen.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parámetros                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>f</entry>
+                                <entry>
+<para>indice de la fila </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>c</entry>
+                                <entry>
+<para>indice de la columna </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Precondición: </title>
+
+<para>f &gt;= 0 &amp;&amp; c &gt;= 0 </para>
+</formalpara>
+<formalpara><title>Devuelve: </title>
+
+<para>Valor entre [0, 255] </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classImagen_1a0ea022d024c815917e6fa8485583672f">
+                <title>byte * Imagen::flat () const</title> <emphasis>Genera un vector con los valores de los pixeles de la imagen.</emphasis>
+                
+<para><formalpara><title>Devuelve: </title>
+
+<para>Vector de bytes que contiene el valor de cada pixel </para>
+</formalpara>
+</para>
+
+            </section>
+</section>

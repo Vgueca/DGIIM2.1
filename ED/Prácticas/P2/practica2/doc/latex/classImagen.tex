@@ -1,0 +1,421 @@
+\hypertarget{classImagen}{}\section{Referencia de la Clase Imagen}
+\label{classImagen}\index{Imagen@{Imagen}}
+
+
+T.\+D.\+A. \hyperlink{classImagen}{Imagen}.  
+
+
+
+
+{\ttfamily \#include $<$imagen.\+h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classImagen_ab2e649aa7a105155c7bfdb846abf0528}{Imagen} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto de la clase imagen. \end{DoxyCompactList}\item 
+\hyperlink{classImagen_a4b397c4a3dc0794cab351f96dc9390fd}{Imagen} (int f, int c)
+\begin{DoxyCompactList}\small\item\em Constructor por parametros de la clase. \end{DoxyCompactList}\item 
+\hyperlink{classImagen_a987062737ac7faacc522370dbae3b224}{Imagen} (const \hyperlink{classImagen}{Imagen} \&orig)
+\begin{DoxyCompactList}\small\item\em Constructor de copia de la clase. \end{DoxyCompactList}\item 
+\hyperlink{classImagen_a33a2993487ba11088d66acc31bb02ce3}{Imagen} (int f, int c, const \hyperlink{imagen_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte} $\ast$vector)
+\begin{DoxyCompactList}\small\item\em Constructor por parametros (vector) de la clase. \end{DoxyCompactList}\item 
+\hyperlink{classImagen_a03dd93c9cf920a9dc0b72f8bd34f2e8a}{$\sim$\+Imagen} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase. \end{DoxyCompactList}\item 
+\hyperlink{classImagen}{Imagen} \& \hyperlink{classImagen_a9cfdf5f496d78247026783b4026458e8}{operator=} (const \hyperlink{classImagen}{Imagen} \&orig)
+\begin{DoxyCompactList}\small\item\em Operador de asignación de la clase. \end{DoxyCompactList}\item 
+int \hyperlink{classImagen_a9cfbba6e40009767ec56197631f63d7e}{get\+\_\+filas} () const
+\begin{DoxyCompactList}\small\item\em Consulta numero de filas de la imagen. \end{DoxyCompactList}\item 
+int \hyperlink{classImagen_a4150d2b82ea80b969ddb8385b83e5485}{get\+\_\+columnas} () const
+\begin{DoxyCompactList}\small\item\em Consulta número de columnas de la imagen. \end{DoxyCompactList}\item 
+void \hyperlink{classImagen_a5b8399ee72d0f855aa9fd1b3bfd0c4cc}{set\+\_\+pixel} (int f, int c, \hyperlink{imagen_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte} valor)
+\begin{DoxyCompactList}\small\item\em Modifica el valor de un pixel de la imagen. \end{DoxyCompactList}\item 
+\hyperlink{imagen_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte} \hyperlink{classImagen_a12eeea1f5b70fe0cac4a01be5878d97d}{get\+\_\+pixel} (int f, int c) const
+\begin{DoxyCompactList}\small\item\em Consulta el valor de un pixel de la imagen. \end{DoxyCompactList}\item 
+\hyperlink{imagen_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte} $\ast$ \hyperlink{classImagen_a0ea022d024c815917e6fa8485583672f}{flat} () const
+\begin{DoxyCompactList}\small\item\em Genera un vector con los valores de los pixeles de la imagen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classImagen_a0d06b8762c40ab6b6d1da6d45c2024da}{allocate} (int f, int c)
+\begin{DoxyCompactList}\small\item\em Reserva fxc posiciones en memoria. \end{DoxyCompactList}\item 
+void \hyperlink{classImagen_a50bdabe1d37bc418b2076e70a5a8402c}{deallocate} ()
+\begin{DoxyCompactList}\small\item\em Libera la memoria ocupada. \end{DoxyCompactList}\item 
+void \hyperlink{classImagen_af9c0798c6c770482eca1cb67e7e1ce9c}{copy} (const \hyperlink{classImagen}{Imagen} \&orig)
+\begin{DoxyCompactList}\small\item\em Copia los datos miembro de orig. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classImagen_a7f15719f14cd934dfcbd68c287bbbe8b}{filas}
+\item 
+int \hyperlink{classImagen_a0a457e0727a540c60dcdf02410e25be9}{cols}
+\item 
+\hyperlink{imagen_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte} $\ast$$\ast$ \hyperlink{classImagen_a2a1c6ab009c2358bbdf7134c9e7f52d6}{img}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+T.\+D.\+A. \hyperlink{classImagen}{Imagen}. 
+
+Una instancia {\itshape i} del tipo de datos abstracto {\ttfamily \hyperlink{classImagen}{Imagen}} es un objeto que presenta una disposicion matricial formado por un conjunto de pixeles, que toman valores en el intervalo \mbox{[}0, 255\mbox{]}. Lo representamos mediante\+: -- un numero de filas -- un numero de columnas -- una matriz de pixeles (bytes);
+
+\begin{DoxyAuthor}{Autores}
+Julián Garrido Arana y Juan Valentín Guerrero Cano 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Fecha}
+Noviembre del 2020 
+\end{DoxyDate}
+
+
+Definición en la línea 26 del archivo imagen.\+h.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classImagen_ab2e649aa7a105155c7bfdb846abf0528}\label{classImagen_ab2e649aa7a105155c7bfdb846abf0528}} 
+\index{Imagen@{Imagen}!Imagen@{Imagen}}
+\index{Imagen@{Imagen}!Imagen@{Imagen}}
+\subsubsection{\texorpdfstring{Imagen()}{Imagen()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Imagen\+::\+Imagen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor por defecto de la clase imagen. 
+
+\begin{DoxyPostcond}{Postcondición}
+Genera una imagen nula (filas = 0; cols = 0; img = nullptr) 
+\end{DoxyPostcond}
+
+
+Definición en la línea 50 del archivo imagen.\+cpp.
+
+\mbox{\Hypertarget{classImagen_a4b397c4a3dc0794cab351f96dc9390fd}\label{classImagen_a4b397c4a3dc0794cab351f96dc9390fd}} 
+\index{Imagen@{Imagen}!Imagen@{Imagen}}
+\index{Imagen@{Imagen}!Imagen@{Imagen}}
+\subsubsection{\texorpdfstring{Imagen()}{Imagen()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Imagen\+::\+Imagen (\begin{DoxyParamCaption}\item[{int}]{f,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Constructor por parametros de la clase. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em f} & numero de filas \\
+\hline
+{\em c} & numero de columnas \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+filas (f) $>$= 0 y cols (c) $>$= 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Crea unaa imagen de fxc pixeles 
+
+La imagen creada contiene valores \char`\"{}basura\char`\"{} (no está inicializada). 
+\end{DoxyPostcond}
+
+
+Definición en la línea 55 del archivo imagen.\+cpp.
+
+\mbox{\Hypertarget{classImagen_a987062737ac7faacc522370dbae3b224}\label{classImagen_a987062737ac7faacc522370dbae3b224}} 
+\index{Imagen@{Imagen}!Imagen@{Imagen}}
+\index{Imagen@{Imagen}!Imagen@{Imagen}}
+\subsubsection{\texorpdfstring{Imagen()}{Imagen()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Imagen\+::\+Imagen (\begin{DoxyParamCaption}\item[{const \hyperlink{classImagen}{Imagen} \&}]{orig }\end{DoxyParamCaption})}
+
+
+
+Constructor de copia de la clase. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em orig} & \hyperlink{classImagen}{Imagen} a ser copiada (ref. constante) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondición}
+Crea una imagen identica a orig 
+\end{DoxyPostcond}
+
+
+Definición en la línea 59 del archivo imagen.\+cpp.
+
+\mbox{\Hypertarget{classImagen_a33a2993487ba11088d66acc31bb02ce3}\label{classImagen_a33a2993487ba11088d66acc31bb02ce3}} 
+\index{Imagen@{Imagen}!Imagen@{Imagen}}
+\index{Imagen@{Imagen}!Imagen@{Imagen}}
+\subsubsection{\texorpdfstring{Imagen()}{Imagen()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Imagen\+::\+Imagen (\begin{DoxyParamCaption}\item[{int}]{f,  }\item[{int}]{c,  }\item[{const \hyperlink{imagen_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte} $\ast$}]{vector }\end{DoxyParamCaption})}
+
+
+
+Constructor por parametros (vector) de la clase. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em f} & numero de filas \\
+\hline
+{\em c} & numero de columnas \\
+\hline
+{\em vector} & vector que contiene los valores de los pixeles linealmente \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+filas (f) $>$= 0 y cols (c) $>$= 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Crea unaa imagen de fxc pixeles 
+
+Cada pixel contiene el valor correspondiente a una posición del vector. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 63 del archivo imagen.\+cpp.
+
+\mbox{\Hypertarget{classImagen_a03dd93c9cf920a9dc0b72f8bd34f2e8a}\label{classImagen_a03dd93c9cf920a9dc0b72f8bd34f2e8a}} 
+\index{Imagen@{Imagen}!````~Imagen@{$\sim$\+Imagen}}
+\index{````~Imagen@{$\sim$\+Imagen}!Imagen@{Imagen}}
+\subsubsection{\texorpdfstring{$\sim$\+Imagen()}{~Imagen()}}
+{\footnotesize\ttfamily Imagen\+::$\sim$\+Imagen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor de la clase. 
+
+\begin{DoxyPostcond}{Postcondición}
+Libera la memoria de la imagen 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Devuelve}
+Nada 
+\end{DoxyReturn}
+
+
+Definición en la línea 74 del archivo imagen.\+cpp.
+
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classImagen_a0d06b8762c40ab6b6d1da6d45c2024da}\label{classImagen_a0d06b8762c40ab6b6d1da6d45c2024da}} 
+\index{Imagen@{Imagen}!allocate@{allocate}}
+\index{allocate@{allocate}!Imagen@{Imagen}}
+\subsubsection{\texorpdfstring{allocate()}{allocate()}}
+{\footnotesize\ttfamily void Imagen\+::allocate (\begin{DoxyParamCaption}\item[{int}]{f,  }\item[{int}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Reserva fxc posiciones en memoria. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em f} & numero de filas \\
+\hline
+{\em c} & numero de columnas \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+filas (f) $>$= 0 y cols (c) $>$= 0 
+\end{DoxyPrecond}
+
+
+Definición en la línea 11 del archivo imagen.\+cpp.
+
+\mbox{\Hypertarget{classImagen_a50bdabe1d37bc418b2076e70a5a8402c}\label{classImagen_a50bdabe1d37bc418b2076e70a5a8402c}} 
+\index{Imagen@{Imagen}!deallocate@{deallocate}}
+\index{deallocate@{deallocate}!Imagen@{Imagen}}
+\subsubsection{\texorpdfstring{deallocate()}{deallocate()}}
+{\footnotesize\ttfamily void Imagen\+::deallocate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Libera la memoria ocupada. 
+
+
+
+Definición en la línea 26 del archivo imagen.\+cpp.
+
+\mbox{\Hypertarget{classImagen_af9c0798c6c770482eca1cb67e7e1ce9c}\label{classImagen_af9c0798c6c770482eca1cb67e7e1ce9c}} 
+\index{Imagen@{Imagen}!copy@{copy}}
+\index{copy@{copy}!Imagen@{Imagen}}
+\subsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily void Imagen\+::copy (\begin{DoxyParamCaption}\item[{const \hyperlink{classImagen}{Imagen} \&}]{orig }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Copia los datos miembro de orig. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em orig} & \hyperlink{classImagen}{Imagen} a ser copiada (ref. const) \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 37 del archivo imagen.\+cpp.
+
+\mbox{\Hypertarget{classImagen_a9cfdf5f496d78247026783b4026458e8}\label{classImagen_a9cfdf5f496d78247026783b4026458e8}} 
+\index{Imagen@{Imagen}!operator=@{operator=}}
+\index{operator=@{operator=}!Imagen@{Imagen}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{classImagen}{Imagen} \& Imagen\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classImagen}{Imagen} \&}]{orig }\end{DoxyParamCaption})}
+
+
+
+Operador de asignación de la clase. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em orig} & \hyperlink{classImagen}{Imagen} a asignar (ref. constante) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+this distinto de \&orig 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Devuelve}
+Objeto \hyperlink{classImagen}{Imagen} (ref. parte izq. de la asignacion) 
+\end{DoxyReturn}
+
+
+Definición en la línea 77 del archivo imagen.\+cpp.
+
+\mbox{\Hypertarget{classImagen_a9cfbba6e40009767ec56197631f63d7e}\label{classImagen_a9cfbba6e40009767ec56197631f63d7e}} 
+\index{Imagen@{Imagen}!get\+\_\+filas@{get\+\_\+filas}}
+\index{get\+\_\+filas@{get\+\_\+filas}!Imagen@{Imagen}}
+\subsubsection{\texorpdfstring{get\+\_\+filas()}{get\_filas()}}
+{\footnotesize\ttfamily int Imagen\+::get\+\_\+filas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consulta numero de filas de la imagen. 
+
+\begin{DoxyReturn}{Devuelve}
+Devuelve el numero de filas 
+\end{DoxyReturn}
+
+
+Definición en la línea 82 del archivo imagen.\+cpp.
+
+\mbox{\Hypertarget{classImagen_a4150d2b82ea80b969ddb8385b83e5485}\label{classImagen_a4150d2b82ea80b969ddb8385b83e5485}} 
+\index{Imagen@{Imagen}!get\+\_\+columnas@{get\+\_\+columnas}}
+\index{get\+\_\+columnas@{get\+\_\+columnas}!Imagen@{Imagen}}
+\subsubsection{\texorpdfstring{get\+\_\+columnas()}{get\_columnas()}}
+{\footnotesize\ttfamily int Imagen\+::get\+\_\+columnas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consulta número de columnas de la imagen. 
+
+\begin{DoxyReturn}{Devuelve}
+Devuelve el numero de columnas 
+\end{DoxyReturn}
+
+
+Definición en la línea 85 del archivo imagen.\+cpp.
+
+\mbox{\Hypertarget{classImagen_a5b8399ee72d0f855aa9fd1b3bfd0c4cc}\label{classImagen_a5b8399ee72d0f855aa9fd1b3bfd0c4cc}} 
+\index{Imagen@{Imagen}!set\+\_\+pixel@{set\+\_\+pixel}}
+\index{set\+\_\+pixel@{set\+\_\+pixel}!Imagen@{Imagen}}
+\subsubsection{\texorpdfstring{set\+\_\+pixel()}{set\_pixel()}}
+{\footnotesize\ttfamily void Imagen\+::set\+\_\+pixel (\begin{DoxyParamCaption}\item[{int}]{f,  }\item[{int}]{c,  }\item[{\hyperlink{imagen_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte}}]{valor }\end{DoxyParamCaption})}
+
+
+
+Modifica el valor de un pixel de la imagen. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em f} & indice de la fila \\
+\hline
+{\em c} & indice de la columna \\
+\hline
+{\em valor} & tono a establecer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+f $>$= 0 \&\& c $>$= 0 \&\& valor entre \mbox{[}0, 255\mbox{]} 
+\end{DoxyPrecond}
+
+
+Definición en la línea 88 del archivo imagen.\+cpp.
+
+\mbox{\Hypertarget{classImagen_a12eeea1f5b70fe0cac4a01be5878d97d}\label{classImagen_a12eeea1f5b70fe0cac4a01be5878d97d}} 
+\index{Imagen@{Imagen}!get\+\_\+pixel@{get\+\_\+pixel}}
+\index{get\+\_\+pixel@{get\+\_\+pixel}!Imagen@{Imagen}}
+\subsubsection{\texorpdfstring{get\+\_\+pixel()}{get\_pixel()}}
+{\footnotesize\ttfamily \hyperlink{imagen_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte} Imagen\+::get\+\_\+pixel (\begin{DoxyParamCaption}\item[{int}]{f,  }\item[{int}]{c }\end{DoxyParamCaption}) const}
+
+
+
+Consulta el valor de un pixel de la imagen. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em f} & indice de la fila \\
+\hline
+{\em c} & indice de la columna \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+f $>$= 0 \&\& c $>$= 0 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Devuelve}
+Valor entre \mbox{[}0, 255\mbox{]} 
+\end{DoxyReturn}
+
+
+Definición en la línea 92 del archivo imagen.\+cpp.
+
+\mbox{\Hypertarget{classImagen_a0ea022d024c815917e6fa8485583672f}\label{classImagen_a0ea022d024c815917e6fa8485583672f}} 
+\index{Imagen@{Imagen}!flat@{flat}}
+\index{flat@{flat}!Imagen@{Imagen}}
+\subsubsection{\texorpdfstring{flat()}{flat()}}
+{\footnotesize\ttfamily \hyperlink{imagen_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte} $\ast$ Imagen\+::flat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Genera un vector con los valores de los pixeles de la imagen. 
+
+\begin{DoxyReturn}{Devuelve}
+Vector de bytes que contiene el valor de cada pixel 
+\end{DoxyReturn}
+
+
+Definición en la línea 96 del archivo imagen.\+cpp.
+
+
+
+\subsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{classImagen_a7f15719f14cd934dfcbd68c287bbbe8b}\label{classImagen_a7f15719f14cd934dfcbd68c287bbbe8b}} 
+\index{Imagen@{Imagen}!filas@{filas}}
+\index{filas@{filas}!Imagen@{Imagen}}
+\subsubsection{\texorpdfstring{filas}{filas}}
+{\footnotesize\ttfamily int Imagen\+::filas\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 30 del archivo imagen.\+h.
+
+\mbox{\Hypertarget{classImagen_a0a457e0727a540c60dcdf02410e25be9}\label{classImagen_a0a457e0727a540c60dcdf02410e25be9}} 
+\index{Imagen@{Imagen}!cols@{cols}}
+\index{cols@{cols}!Imagen@{Imagen}}
+\subsubsection{\texorpdfstring{cols}{cols}}
+{\footnotesize\ttfamily int Imagen\+::cols\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 31 del archivo imagen.\+h.
+
+\mbox{\Hypertarget{classImagen_a2a1c6ab009c2358bbdf7134c9e7f52d6}\label{classImagen_a2a1c6ab009c2358bbdf7134c9e7f52d6}} 
+\index{Imagen@{Imagen}!img@{img}}
+\index{img@{img}!Imagen@{Imagen}}
+\subsubsection{\texorpdfstring{img}{img}}
+{\footnotesize\ttfamily \hyperlink{imagen_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte}$\ast$$\ast$ Imagen\+::img\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 32 del archivo imagen.\+h.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{imagen_8h}{imagen.\+h}\item 
+src/\hyperlink{imagen_8cpp}{imagen.\+cpp}\end{DoxyCompactItemize}

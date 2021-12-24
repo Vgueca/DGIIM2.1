@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="imagen_8h">
+    <title>imagen.h File Reference</title>
+<para>Include dependency diagram for imagen.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="imagen_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for imagen.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="imagen_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Clases </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classImagen">Imagen</link></para>
+<para><emphasis>T.D.A. Imagen.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>typedefs</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef unsigned char  <link linkend="imagen_8h_1a0c8186d9b9b7880309c27230bbb5e69d">byte</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Descripción detallada</title>
+
+<para>Fichero de cabecera asociado del T.D.A. <link linkend="classImagen">Imagen</link>. </para>
+    <para>Definition in file /home/julian/Escritorio/2_DGIIM/ED/P_2/proyecto_imagen/inc/imagen.h</para>
+    </simplesect>
+</section>

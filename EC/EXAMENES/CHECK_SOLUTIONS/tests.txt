@@ -1,0 +1,28 @@
+2012_FEBRERO c b d c a b b b c b d b c b c c b c a a c c a d b b a b d a
+2012_SEPTIEMBRE a d b c a b b b d a c c c a b b b a c a d c a b d a b b a d
+2013_FEBRERO d d b b c d a a d b d d a a c a c a b b c b d d c c b b d a
+2013_FEBRERO_PRACTICAS d a d c a c c d d c b c d a c d b b d a
+2013_SEPTIEMBRE c c b d b d b b d c c a a a c a a b c b b d a b d a c b a b
+2013_SEPTIEMBRE_PRACTICAS a a b a b c a b a a b d b a b a c a c b
+2014_FEBRERO a c d c a b c c d d a c d c b b c d b c a c c a d b a b d d
+2014_FEBRERO_PRACTICAS a c d c b c d d a c d d d b b c b d b d
+2014_SEPTIEMBRE c b c b d c a d d b b c b c d c b c c d a a d a c b b b a d
+2014_SEPTIEMBRE_PRACTICAS c c c b a d c b d a b b b d b a c b b d
+2015_FEBRERO b b d c a b a d c c c a c b c b a c b a b c a c c d b b b d
+2015_FEBRERO_PRACTICAS a d a c b c d a d a a c b b b c b b d c
+2015_SEPTIEMBRE c b b d d a d a a c b b d d c d b c d c a c d b b a a a c b
+2015_SEPTIEMBRE_PRACTICAS b a c d d c a c b a b a b d a c d b d c
+2016_FEBRERO b a a d b b d c c a d c b d a a c c d b d c a b a c b b c c
+2016_FEBRERO_PRACTICAS a d b a c c b a a b c d b b d b b c d a
+2016_SEPTIEMBRE a b a a d d c d a c b a b d d b c a c d d c c d d c b b c a
+2016_SEPTIEMBRE_PRACTICAS b b b b c a a c a d c d a a c a a d a b
+2017_ENERO d b b b b b d b c a d bc d a a c c b a a d d a a d d c d a c
+2017_ENERO_PRACTICAS a a c c c d c c b b a d d a d c a d d c
+2017_JULIO b c b d d b c c b b c c a a b a c d b a d a d d a d b a b c
+2017_JULIO_PRACTICAS b d c b b a a b c a b d c c b bc d b a b
+2018_ENERO c a b c d a b c d a b c d d a a b c d d d c b d b d a d d c
+2018_ENERO_PRACTICAS d b d a d a c b b c b a d b a c b c b b
+2018_FEBRERO b b d c d b c c b b a a a d b d d b c d a c a d b a c a b c
+2018_FEBRERO_PRACTICAS c b d c c a c c d d d a a a b d b b d a
+2019_ENERO d c c b c c c d d a a b d b a a c d d a c a a b b c b a d c
+2019_ENERO_PRACTICAS b c b c c b d d a a a d c b d c a d d b

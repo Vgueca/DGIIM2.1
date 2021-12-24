@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dir_bfccd401955b95cf8c75461437045ac0">
+    <title>Referencia del directorio inc</title>
+<para>Directory dependency diagram for inc</para>
+<para>
+    <figure>
+        <title>Directory Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="dir_bfccd401955b95cf8c75461437045ac0_dep.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <simplesect>
+            <title> Archivo </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="funciones_8h">funciones.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="imagen_8h">imagen.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="imagenES_8h">imagenES.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Descripción detallada</title>
+    <para>Directory location is /home/julian/Escritorio/2_DGIIM/ED/P_2/proyecto_imagen/inc/</para>
+    </simplesect>
+</section>

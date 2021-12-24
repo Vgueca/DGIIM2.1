@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="imagenES_8cpp">
+    <title>imagenES.cpp File Reference</title>
+    <programlisting>#include &lt;fstream&gt;</programlisting>
+    <programlisting>#include &lt;string&gt;</programlisting>
+    <programlisting>#include &quot;imagen.h&quot;</programlisting>
+    <programlisting>#include &lt;imagenES.h&gt;</programlisting>
+<para>Include dependency diagram for imagenES.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="imagenES_8cpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for imagenES.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="imagenES_8cpp__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Funciones</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="imagenES_8h_1a8914f6544a484741b05c092d9e7522ed">TipoImagen</link> <link linkend="imagenES_8cpp_1a16834dd3756f7baf1e5ef710ad7b0e3b">LeerTipo</link> (
+ifstream &amp; f)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="imagenES_8h_1a8914f6544a484741b05c092d9e7522ed">TipoImagen</link> <link linkend="imagenES_8cpp_1acaa5fb277940aceed29f86c093a3d89c">LeerTipoImagen</link> (
+const char * nombre)<para><emphasis>Devuelve el tipo de imagen del archivo.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>char <link linkend="imagenES_8cpp_1ab090ad072f47dc1ffcfcb900c3334936">SaltarSeparadores</link> (
+ifstream &amp; f)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="imagenES_8cpp_1a0e193b2477b18f021255d69362992859">LeerCabecera</link> (
+ifstream &amp; f, int &amp; fils, int &amp; cols)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>unsigned char * <link linkend="imagenES_8cpp_1a05aea20533de5bbd02789f76aafbb99b">LeerImagenPPM</link> (
+const char * nombre, int &amp; fils, int &amp; cols)<para><emphasis>Lee una imagen de tipo PPM.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>unsigned char * <link linkend="imagenES_8cpp_1a03340a1e1e4a88385c972bb4af463649">LeerImagenPGM</link> (
+const char * nombre, int &amp; fils, int &amp; cols)<para><emphasis>Lee una imagen de tipo PGM.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="imagenES_8cpp_1ae149be8653b9f8c7321ac40577e7518c">EscribirImagenPPM</link> (
+const char * nombre, const unsigned char * datos, const int fils, const int cols)<para><emphasis>Escribe una imagen de tipo PPM.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="imagenES_8cpp_1a4b649cc272f02649563791d5ed75b557">EscribirImagenPGM</link> (
+const char * nombre, const unsigned char * datos, const int fils, const int cols)<para><emphasis>Escribe una imagen de tipo PGM.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="imagenES_8cpp_1a0043265a637c922dd535b53e66fc3096">LeerImagen</link> (
+const char * nombre, <link linkend="classImagen">Imagen</link> &amp; imagen, <link linkend="imagenES_8h_1a8914f6544a484741b05c092d9e7522ed">TipoImagen</link> &amp; tipo)<para><emphasis>Lee una imagen segun el tipo.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="imagenES_8cpp_1a377070c498bab0ae97611f84c455d1e4">EscribirImagen</link> (
+const char * nombre, const <link linkend="classImagen">Imagen</link> &amp; imagen, const <link linkend="imagenES_8h_1a8914f6544a484741b05c092d9e7522ed">TipoImagen</link> &amp; tipo)<para><emphasis>Escribe una imagen segun el tipo.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Descripción detallada</title>
+
+<para>Fichero con definiciones para la E/S de im�genes. </para>
+
+<para>Permite la E/S de archivos de tipo PGM,PPM </para>
+    <para>Definition in file /home/julian/Escritorio/2_DGIIM/ED/P_2/proyecto_imagen/src/imagenES.cpp</para>
+    </simplesect>
+</section>

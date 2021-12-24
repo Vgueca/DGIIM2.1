@@ -1,0 +1,9 @@
+EJERCICIOS TIPO TEST:
+
+1) d. La clase set si contiene una clase iteradora por lo tanto, como el iterador está declarado sobre esta clase, sí es correcta la declaración ( pese a que la clase stack no posea iterador).
+
+2) b) No son compatibles para ningún árbol al estudiar las posibles combinaciones que pueden llevarnos cada uno de los recorridos frente a las combinaciones que nos lleva el otro recorrido . 
+
+3) b. La primera afirmación es falsa porque al aplicar h a un múltiplo de M, siempre sale M, posición no encontrada en una tabla hash de tamaño M (tiene M-1 índices ya que empieza en 0)
+      La segunda afirmación es cierta ya que un árbol de tipo APO inserta cada uno de los enteros y reajusta para mantener la definición de APO, al igual que un árbol de tipo AVL, que en cada inserción comprueba si se debe reestructurar el árbol mediante rotaciones. Como ambos siguen un criterio basado en la comparación  de las etiquetas de los nodos, ambos árboles siempre tendrán la misma altura
+      La tercera afirmación es cierta porque se listan siempre de izquierda a derecha

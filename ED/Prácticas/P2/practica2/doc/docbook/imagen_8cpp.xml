@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="imagen_8cpp">
+    <title>imagen.cpp File Reference</title>
+    <programlisting>#include &quot;imagen.h&quot;</programlisting>
+<para>Include dependency diagram for imagen.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="imagen_8cpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for imagen.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="imagen_8cpp__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <simplesect>
+        <title>Descripción detallada</title>
+
+<para>Implementación del fichero imgaen.h. </para>
+    <para>Definition in file /home/julian/Escritorio/2_DGIIM/ED/P_2/proyecto_imagen/src/imagen.cpp</para>
+    </simplesect>
+</section>

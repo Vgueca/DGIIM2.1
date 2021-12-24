@@ -1,0 +1,178 @@
+\hypertarget{funciones_8h}{}\section{Referencia del Archivo inc/funciones.h}
+\label{funciones_8h}\index{inc/funciones.\+h@{inc/funciones.\+h}}
+
+
+Fichero de cabecera para las funciones que modifican imagenes.  
+
+
+{\ttfamily \#include \char`\"{}imagen.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}imagen\+E\+S.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+Dependencia gráfica adjunta para funciones.\+h\+:
+% FIG 0
+Gráfico de los archivos que directa o indirectamente incluyen a este archivo\+:
+% FIG 1
+\subsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{funciones_8h_a4ccd6deb3870b80f06e0c1798c932d3d}{F\+U\+N\+C\+I\+O\+N\+ES}
+\end{DoxyCompactItemize}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{funciones_8h_ad2d321a0979cbc0df8552d934d92bf39}{Umbralizar\+Esc} (const char $\ast$fichE, const char $\ast$fichS, int t1, int t2)
+\begin{DoxyCompactList}\small\item\em Umbraliza una imagen (pixeles fuera de un rango de valores = 255) \end{DoxyCompactList}\item 
+int \hyperlink{funciones_8h_aa542d46da362389bf2c8d3ebd26b40cf}{Zoom} (const char $\ast$fichE, const char $\ast$fichS, int x1, int y1, int x2, int y2)
+\begin{DoxyCompactList}\small\item\em Aumenta una seccion de la imagen (zoom) \end{DoxyCompactList}\item 
+int \hyperlink{funciones_8h_a56ae066a22a81096edbd19f78727b6c6}{Contraste} (const char $\ast$fichE, const char $\ast$fichS, int min, int max)
+\begin{DoxyCompactList}\small\item\em Aumenta el contraste de una imagen segun un nuevo rango valores (min \&\& max) \end{DoxyCompactList}\item 
+int \hyperlink{funciones_8h_ac28b10a7053cb48f72e17f22aab8f97b}{Morphing} (const char $\ast$fich\+E1, const char $\ast$fich\+E2, int pasos)
+\begin{DoxyCompactList}\small\item\em Crea una transicion de imagenes mediante la creacion de ficheros (imagenes) intermedios. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Fichero de cabecera para las funciones que modifican imagenes. 
+
+
+
+\subsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\mbox{\Hypertarget{funciones_8h_a4ccd6deb3870b80f06e0c1798c932d3d}\label{funciones_8h_a4ccd6deb3870b80f06e0c1798c932d3d}} 
+\index{funciones.\+h@{funciones.\+h}!F\+U\+N\+C\+I\+O\+N\+ES@{F\+U\+N\+C\+I\+O\+N\+ES}}
+\index{F\+U\+N\+C\+I\+O\+N\+ES@{F\+U\+N\+C\+I\+O\+N\+ES}!funciones.\+h@{funciones.\+h}}
+\subsubsection{\texorpdfstring{F\+U\+N\+C\+I\+O\+N\+ES}{FUNCIONES}}
+{\footnotesize\ttfamily \#define F\+U\+N\+C\+I\+O\+N\+ES}
+
+
+
+Definición en la línea 12 del archivo funciones.\+h.
+
+
+
+\subsection{Documentación de las funciones}
+\mbox{\Hypertarget{funciones_8h_ad2d321a0979cbc0df8552d934d92bf39}\label{funciones_8h_ad2d321a0979cbc0df8552d934d92bf39}} 
+\index{funciones.\+h@{funciones.\+h}!Umbralizar\+Esc@{Umbralizar\+Esc}}
+\index{Umbralizar\+Esc@{Umbralizar\+Esc}!funciones.\+h@{funciones.\+h}}
+\subsubsection{\texorpdfstring{Umbralizar\+Esc()}{UmbralizarEsc()}}
+{\footnotesize\ttfamily int Umbralizar\+Esc (\begin{DoxyParamCaption}\item[{const char $\ast$}]{fichE,  }\item[{const char $\ast$}]{fichS,  }\item[{int}]{t1,  }\item[{int}]{t2 }\end{DoxyParamCaption})}
+
+
+
+Umbraliza una imagen (pixeles fuera de un rango de valores = 255) 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em fichE} & nombre del fichero que contiene la imagen de entrada \\
+\hline
+{\em fichS} & nombre del fichero para guardar la imagen de salida \\
+\hline
+{\em t1} & valor del inicio del intervalo (umbral inicio) \\
+\hline
+{\em t2} & valor del final del intervalo (umbral fin) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+t1 \&\& t2 deben estar comprendidos en el intervalo \mbox{[}0, 255\mbox{]}; 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Devuelve}
+un codigo de error indicando si no falla o el tipo de fallo 
+\end{DoxyReturn}
+
+
+Definición en la línea 15 del archivo funciones.\+cpp.
+
+\mbox{\Hypertarget{funciones_8h_aa542d46da362389bf2c8d3ebd26b40cf}\label{funciones_8h_aa542d46da362389bf2c8d3ebd26b40cf}} 
+\index{funciones.\+h@{funciones.\+h}!Zoom@{Zoom}}
+\index{Zoom@{Zoom}!funciones.\+h@{funciones.\+h}}
+\subsubsection{\texorpdfstring{Zoom()}{Zoom()}}
+{\footnotesize\ttfamily int Zoom (\begin{DoxyParamCaption}\item[{const char $\ast$}]{fichE,  }\item[{const char $\ast$}]{fichS,  }\item[{int}]{x1,  }\item[{int}]{y1,  }\item[{int}]{x2,  }\item[{int}]{y2 }\end{DoxyParamCaption})}
+
+
+
+Aumenta una seccion de la imagen (zoom) 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em fichE} & nombre del fichero que contiene la imagen de entrada \\
+\hline
+{\em fichS} & nombre del fichero para guardar la imagen de salida \\
+\hline
+{\em x1} & indice de la fila de la esquina superior de la seccion \\
+\hline
+{\em y1} & indice de la columna de la esquina superior de la seccion \\
+\hline
+{\em x2} & indice de la fila de la esquina inferior de la seccion \\
+\hline
+{\em y2} & indice de la columna de la esquina inferior de la seccion \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+un codigo de error indicando si no falla o el tipo de fallo 
+\end{DoxyReturn}
+
+
+Definición en la línea 45 del archivo funciones.\+cpp.
+
+\mbox{\Hypertarget{funciones_8h_a56ae066a22a81096edbd19f78727b6c6}\label{funciones_8h_a56ae066a22a81096edbd19f78727b6c6}} 
+\index{funciones.\+h@{funciones.\+h}!Contraste@{Contraste}}
+\index{Contraste@{Contraste}!funciones.\+h@{funciones.\+h}}
+\subsubsection{\texorpdfstring{Contraste()}{Contraste()}}
+{\footnotesize\ttfamily int Contraste (\begin{DoxyParamCaption}\item[{const char $\ast$}]{fichE,  }\item[{const char $\ast$}]{fichS,  }\item[{int}]{min,  }\item[{int}]{max }\end{DoxyParamCaption})}
+
+
+
+Aumenta el contraste de una imagen segun un nuevo rango valores (min \&\& max) 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em fichE} & nombre del fichero que contiene la imagen de entrada \\
+\hline
+{\em fichS} & nombre del fichero para guardar la imagen de salida \\
+\hline
+{\em min} & extremo inf. del intervalo de niveles de gris para la imagen resultante. \\
+\hline
+{\em max} & extremo sup. del intervalo de niveles de gris para la imagen resultante. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+min \&\& man deben estar comprendidos en el intervalo \mbox{[}0, 255\mbox{]}; 
+
+max$>$=min 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Devuelve}
+un codigo de error indicando si no falla o el tipo de fallo 
+\end{DoxyReturn}
+
+
+Definición en la línea 113 del archivo funciones.\+cpp.
+
+\mbox{\Hypertarget{funciones_8h_ac28b10a7053cb48f72e17f22aab8f97b}\label{funciones_8h_ac28b10a7053cb48f72e17f22aab8f97b}} 
+\index{funciones.\+h@{funciones.\+h}!Morphing@{Morphing}}
+\index{Morphing@{Morphing}!funciones.\+h@{funciones.\+h}}
+\subsubsection{\texorpdfstring{Morphing()}{Morphing()}}
+{\footnotesize\ttfamily int Morphing (\begin{DoxyParamCaption}\item[{const char $\ast$}]{fich\+E1,  }\item[{const char $\ast$}]{fich\+E2,  }\item[{int}]{pasos }\end{DoxyParamCaption})}
+
+
+
+Crea una transicion de imagenes mediante la creacion de ficheros (imagenes) intermedios. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em fich\+E1} & nombre del fichero que contiene la imagen inicial u origen \\
+\hline
+{\em fich\+E2} & nombre del fichero que contiene la imagen final o resultado \\
+\hline
+{\em pasos} & numero de pasos (ficheros) intermedios a realizar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+pasos debe estar comprendido en el intervalo \mbox{[}0, 256\mbox{]}; 
+
+las caracteristicas y dimension de ambas imagenes fich\+E1 y fich\+E2 deben ser iguales 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Devuelve}
+un codigo de error indicando si no falla o el tipo de fallo 
+\end{DoxyReturn}
+
+
+Definición en la línea 155 del archivo funciones.\+cpp.
+
